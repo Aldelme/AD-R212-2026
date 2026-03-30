@@ -1,0 +1,98 @@
+@media (max-width: 600px) {
+    .nav {
+        flex-wrap: wrap;
+    }
+    .hero {
+        min-height: 100em;
+    }
+}
+
+:root {
+  /* Couleurs */
+  --color-primary: #2563eb;
+  --color-text: #1f2937;
+  --color-text-light: #6b7280;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f9fafb;
+
+  /* Espacements */
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+
+  /* Typographie */
+  --font-base: system-ui, -apple-system, sans-serif;
+  --line-height: 1.6;
+}
+
+body {
+  font-family: var(--font-base);
+  line-height: var(--line-height);
+  color: var(--color-text);
+  margin: 0;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+ul {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 300px;
+    text-align: center;
+}
+
+.cta {
+    padding: 10px;
+    border-radius: 50px;
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.projets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-lg);
+}
+
+.carte {
+    padding: 10px;
+    background-color: var(--color-bg-alt);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px;
+}
+
+a, button {
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.carte {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.carte:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+}
