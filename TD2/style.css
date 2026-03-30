@@ -1,0 +1,118 @@
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  color: #333;
+}
+
+main {
+  max-width: 100ch;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: rgb(236, 236, 236);
+}
+
+h1 {
+  margin-top: 0;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+header {
+    background-color: rgb(6, 207, 97);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+nav a {
+    background-color: rgb(30, 123, 185);
+}
+
+.logo {
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+header nav ul li{
+    padding: 1%;
+}
+
+header ul {
+    display: flex;
+    flex-direction: wrap;
+    list-style-type: none;
+    padding: 100px;
+}
+
+a {
+    background-color: rgb(255, 72, 72);
+    padding: 10px;
+    border-radius: 50px;
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    font-size: 1em;
+}
+
+#pourquoi {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+}
+
+#pourquoi article {
+    max-width: 25ch;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    background-color: rgb(206, 206, 206);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 3%;
+}
+
+#conseils {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+#conseils ul li {
+    margin: 5px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+#temoignages {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: darkcyan;
+    text-align: center;
+    height: 100px;
+    padding-top: 2%;
+}
+
+@media (max-width: 600px) {
+    /* main {
+        max-width: 60ch;
+    } */
+    /* nav {
+        flex-wrap: wrap;
+    }
+    body { 
+        min-height: 100em;
+    } */
+}
