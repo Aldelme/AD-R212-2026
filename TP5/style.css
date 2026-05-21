@@ -1,1 +1,42 @@
+:root {
+  --color-primary: #3b4cc0;
+  --color-bg: #f5f5f7;
+  --color-bg-footer: rgb(36, 36, 36);
+  --spacing-md: 1rem;
+  --radius: 8px;
+}
 
+/* Typographie d'abord */
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  color: #1a1a2e;
+  background: var(--color-bg);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    
+}
+
+
+
+
+footer {
+    background-color: var(--color-bg-footer);
+    color: var(--color-bg);
+    padding: 20px;
+}
+
+.footer {
+  text-align: center;
+}
+
+/* Layout ensuite */
+.projets-grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+}
